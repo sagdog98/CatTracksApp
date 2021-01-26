@@ -1,0 +1,205 @@
+.leaflet-container {
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 0;
+}
+
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  top: -50%;
+  height: 100%;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+#centerPoint {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  margin-left: -15px;
+  font-size: 30px;
+}
+
+#centerPoint img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#lines {
+  position: fixed;
+  width: 96%;
+  left: 2%;
+}
+
+.lineInit {
+  top: 75%;
+  height: 35%;
+}
+
+.line {
+  border-radius: 10px;
+  background-color: orange;
+  margin: 5px 0px;
+  padding: 17px 10px;
+  color: white;
+}
+
+.line .lineName {
+  font-size: 45px;
+  width: 65%;
+  display: inline-block;
+}
+
+.line .stopTime {
+  display: inline-block;
+  width: 32.9%;
+  text-align: right;
+}
+
+.line .stopTime .nums {
+  font-size: 25px;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  right: 0px;
+}
+
+.line .stopTime .mins {
+  width: 100%;
+  padding-top: 2px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+#linesList {
+  overflow-y: auto;
+  width: 100%;
+  height: 80%;
+}
+
+.currentStopName {
+  color: white;
+  background-color: #333;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 5px 0px;
+  width: 96%;
+  left: 2%;
+  top: 10%;
+  position: fixed;
+  text-align: center;
+}
+
+#moreInfo {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  z-index: 4;
+}
+
+#moreInfo .header {
+  font-size: 25px;
+  background-color: orange;
+  width: 100%;
+  padding: 0px 0px;
+  display: block;
+  color: white;
+}
+
+#moreInfo .title {
+  position: relative;
+  display: inline-block;
+  width: 68%;
+  padding: 10px 5px;
+}
+
+#moreInfo #exit {
+  position: relative;
+  display: inline-block;
+  text-align: right;
+  width: 24%;
+  padding: 10px 5px;
+}
+
+#moreInfo .eta {
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.is-shown {
+  top: 60%;
+}
+
+.is-hidden {
+  top: 110%;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+}
+
+.button {
+  background-color: red;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.info {
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.noStops {
+  border-radius: 10px;
+  background-color: darkslategrey;
+  color: white;
+  margin: 5px 0px;
+  padding: 17px 10px;
+}
+
+.findLocationButton {
+  background-color: transparent;
+  position: fixed;
+  left: 2%;
+  top: 70%;
+  z-index: 3;
+}
+/*
+Shade
+*/
+
+.shade {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: black;
+  left: 0;
+  opacity: .8;
+  z-index: 1;
+}
